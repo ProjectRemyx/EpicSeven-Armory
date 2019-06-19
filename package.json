@@ -1,0 +1,19 @@
+{
+  "name": "epicseven_armory",
+  "version": "1.0.0",
+  "description": "An armory built for the mobile game Epic Seven. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProjectRemyx/EpicSeven-Armory.git"
+  },
+  "author": "Jing Cheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProjectRemyx/EpicSeven-Armory/issues"
+  },
+  "homepage": "https://github.com/ProjectRemyx/EpicSeven-Armory#readme"
+}
