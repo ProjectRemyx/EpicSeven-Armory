@@ -13,6 +13,14 @@ router.get('/', (req, res) => {
         .then(characters => res.json(characters))
 });
 
+//@route    GET api/character
+//@desc     Get single character
+//@access   Public
+router.get('/:id', (req, res) => {
+    Character.findById(req.params.id)
+        .then(character => res.json(character))
+});
+
 //@route    POST api/characters
 //@desc     Create a character
 //@access   Public

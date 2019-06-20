@@ -3,7 +3,7 @@ const mongoose = require('mongoose'); //ORM
 const bodyParser = require('body-parser'); //Get data from requests
 
 //Set up routes
-const characters = require('./routes/api/characters');
+const characters = require('./routes/api/characters'); //Character routes
 
 const app = express();
 
@@ -20,7 +20,7 @@ mongoose
     .catch(err => console.log(err));
 
 //Use Routes
-app.use('/api/characters', characters);
+app.use('/api/characters', characters); //For anything going to /api/characters refers to the required file
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server started on port ${port}`));
