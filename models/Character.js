@@ -8,10 +8,6 @@ const characterSchema = new Schema({
         type: String,
         required: true
     },
-    element:{
-        type: String,
-        required: true
-    },
     level:{
         type: Number,
         required: true

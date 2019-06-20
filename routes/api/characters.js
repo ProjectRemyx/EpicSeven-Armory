@@ -27,7 +27,6 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     const newCharacter = new Character({
         name: req.body.name,
-        element: req.body.element,
         level: req.body.level,
         power: req.body.power,
     });  
