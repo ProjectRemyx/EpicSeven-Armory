@@ -4,6 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { getCharacters, deleteCharacter, viewCharacter } from '../actions/characterActions';
 import PropTypes from 'prop-types';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 class CharacterList extends Component {
 
@@ -23,7 +24,9 @@ class CharacterList extends Component {
         const { characters } = this.props.character;
         return(
             <Container>
+            <ScrollableAnchor id={'characterSection'}>
             <h2>Character Box:</h2>
+            </ScrollableAnchor>
             <img src={require('../imgs/divider.png')} alt="Divider" style={{width: '30%'}}/> 
                 <ListGroup>
                     <TransitionGroup className = "character-list">
@@ -41,7 +44,7 @@ class CharacterList extends Component {
                                     className="float-right"
                                     theme="danger"
                                     size="sm"
-                                    style={{margin: '0'}}
+                                    style={{marginTop: '-4px'}}
                                     onClick={this.onDeleteClick.bind(this, _id)}
                                     >&times;
                                     </Button>

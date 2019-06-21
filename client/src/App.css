@@ -12,6 +12,12 @@ nav{
   font-family: 'Fira Sans', sans-serif;
 }
 
+.divider{
+  color: white;
+  height: 1.5rem;
+  width: 100%;
+}
+
 .App{
   width: 100vw;
 }
@@ -73,7 +79,7 @@ nav{
 
 .character-list-background{
   background-color: #191614;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
 }
 
 .fade-enter{

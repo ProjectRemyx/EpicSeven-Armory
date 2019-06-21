@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollableAnchor from 'react-scrollable-anchor';
 import {
   Card,
   CardHeader,
@@ -10,7 +11,9 @@ import {
 export default function CharacterCard() {
   return (
     <div className="main-team-background">
+        <ScrollableAnchor id={'teamSection'}>
         <h2>Main Team</h2>
+        </ScrollableAnchor>
         <img src={require('../imgs/divider.png')} alt="Divider" style={{width: '30%'}}/>        
         <div className="main-team-container">
             <div className="main-team-card">

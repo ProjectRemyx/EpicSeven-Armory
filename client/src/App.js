@@ -24,6 +24,7 @@ class App extends Component {
         <MainTeam/>
         <ArtifactCard/>
       </div>
+      <div className="divider"></div>
       <div className="character-list-background">
         <Container>
           <CharacterModal/>

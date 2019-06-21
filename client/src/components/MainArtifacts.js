@@ -1,11 +1,14 @@
 import React from "react";
 import { Card, CardBody, CardImg } from "shards-react";
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 export default function ArtifactCard() {
   return (
     <div className="main-artifact-background">
         <div className="main-artifact-background-overlay">
+            <ScrollableAnchor id={'artifactSection'}>
             <h2>Main Artifacts</h2>
+            </ScrollableAnchor>
             <img src={require('../imgs/divider.png')} alt="Divider" style={{width: '30%'}}/> 
             <div className="main-artifact-container">     
                 <div className="main-artifact-card">
