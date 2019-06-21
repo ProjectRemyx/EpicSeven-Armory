@@ -9,7 +9,10 @@ export default class HeaderIntro extends Component{
                 <Container className="header-container">
                     <Row>
                         <Col className="header-text">
-                        <h1>Jing's Epic Seven Armory</h1>
+                        <div>
+                            <h1>Jing's Epic Seven Armory</h1>
+                            <img src={require('../imgs/maindivider.png')} alt="Divider" style={{width: '85%'}}/>
+                        </div>
                             <p>
                             <br/>
                             Welcome to my armory! Here you'll find what my team and character collection looks like.

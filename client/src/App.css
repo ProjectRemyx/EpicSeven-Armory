@@ -1,3 +1,15 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+h2{
+  color: white;
+}
+
+nav{
+  font-family: 'Fira Sans', sans-serif;
+}
+
 .App{
   width: 100vw;
 }
@@ -18,6 +30,22 @@
   margin: auto;
 }
 
+.main-team-background{
+  background-color: #191614;
+  padding: 2em;
+}
+
+.main-team-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-team-card{
+  margin: 1em;
+}
+
 .fade-enter{
   opacity: 0.01;
 }
@@ -34,10 +62,6 @@
     transition: opacity 1000ms ease-in;
   }
 
-#nameInput{
-
-}
-
 #levelInput{
   margin-top: 1rem;
 }
@@ -45,3 +69,4 @@
 #powerInput{
   margin-top: 1rem;
 }
+

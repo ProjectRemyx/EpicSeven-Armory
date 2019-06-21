@@ -3,6 +3,7 @@ import AppNavBar from './components/AppNavbar';
 import CharacterList from './components/CharacterList';
 import CharacterModal from './components/CharacterModal';
 import HeaderIntro from './components/HeaderIntro';
+import MainTeam from './components/MainTeam';
 import { Container } from 'shards-react';
 
 import { Provider } from 'react-redux';
@@ -18,6 +19,7 @@ class App extends Component {
       <div className="App" align="center">
         <AppNavBar/>
         <HeaderIntro/>
+        <MainTeam/>
       </div>
         <Container>
           <CharacterModal/>
