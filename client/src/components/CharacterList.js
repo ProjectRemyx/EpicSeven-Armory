@@ -23,12 +23,14 @@ class CharacterList extends Component {
         const { characters } = this.props.character;
         return(
             <Container>
+            <h2>Character Box:</h2>
+            <img src={require('../imgs/divider.png')} alt="Divider" style={{width: '30%'}}/> 
                 <ListGroup>
                     <TransitionGroup className = "character-list">
                         {characters.map(({ _id, name, level, power }) => (
                             <CSSTransition key={_id} timeout={500} classNames="fade">
                                 <ListGroupItem>
-                                    {name}, {power}
+                                    {name}, Lvl {level}, Combat Power: {power}
                                     {/* <Button
                                     className="float-right"
                                     size="sm"

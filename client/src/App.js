@@ -24,10 +24,12 @@ class App extends Component {
         <MainTeam/>
         <ArtifactCard/>
       </div>
+      <div className="character-list-background">
         <Container>
           <CharacterModal/>
           <CharacterList/>
         </Container>
+      </div>
         <FooterPage/>
       </Provider>
       );
