@@ -13,3 +13,15 @@
     opacity: 0.01;
     transition: opacity 1000ms ease-in;
   }
+
+#nameInput{
+
+}
+
+#levelInput{
+  margin-top: 1rem;
+}
+
+#powerInput{
+  margin-top: 1rem;
+}

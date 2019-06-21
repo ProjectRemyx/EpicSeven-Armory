@@ -1,58 +1,46 @@
 import React, { Component } from 'react';
-import {Container, ListGroup, ListGroupItem, Button} from 'shards-react';
+import { Container, ListGroup, ListGroupItem, Button } from 'shards-react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import uuid from 'uuid';
+import { connect } from 'react-redux';
+import { getCharacters, deleteCharacter, viewCharacter } from '../actions/characterActions';
+import PropTypes from 'prop-types';
 import { basename } from 'path';
 
 class CharacterList extends Component {
-    state = {
-        characters: [
-            { id: uuid(), name: 'Sez' , level: 60, power: 30000 },
-            { id: uuid(), name: 'Angelica' , level: 50, power: 16000},
-            { id: uuid(), name: 'Luluca' , level: 50, power: 20000},
-            { id: uuid(), name: 'Dizzy' , level: 60, power: 30000}
 
-        ]
+    componentDidMount(){
+        this.props.getCharacters();
+    }
+
+    onDeleteClick = (id) => {
+        this.props.deleteCharacter(id);
+    }
+
+    onViewClick = (id) => {
+        this.props.viewCharacter(id);
     }
 
     render(){
-        //Pull out items from this.state items
-        const { characters } = this.state;
+        const { characters } = this.props.character;
         return(
             <Container>
-                <Button 
-                color="dark" 
-                style={{marginBottom: '2rem', marginTop: '2rem'}}
-                onClick={() => {
-                    const name = prompt('Enter character name');
-                    const level = prompt('Enter character level');
-                    const power = prompt('Enter character power');
-                
-                    if(name && level && power){
-                        this.setState(state => ({
-                            characters: [...state.characters, { id: uuid(), name, level, power }]
-                        }));
-                    }
-                }}
-                >
-                Add Character
-                </Button>
-
                 <ListGroup>
                     <TransitionGroup className = "character-list">
-                        {characters.map(({ id, name, level, power }) => (
-                            <CSSTransition key={id} timeout={500} classNames="fade">
+                        {characters.map(({ _id, name, level, power }) => (
+                            <CSSTransition key={_id} timeout={500} classNames="fade">
                                 <ListGroupItem>
                                     {name}, {power}
-                                    <Button
-                                    className="remove-btn float-right"
-                                    color="danger"
+                                    {/* <Button
+                                    className="float-right"
                                     size="sm"
-                                    onClick={() => {
-                                        this.setState(state => ({ 
-                                            characters: state.characters.filter(character => character.id !== id)
-                                        }));
-                                    }}
+                                    onClick={this.onViewClick.bind(this, id)}
+                                    >View
+                                    </Button> */}
+                                    <Button
+                                    className="float-right"
+                                    theme="danger"
+                                    size="sm"
+                                    onClick={this.onDeleteClick.bind(this, _id)}
                                     >&times;
                                     </Button>
                                 </ListGroupItem>
@@ -63,7 +51,15 @@ class CharacterList extends Component {
             </Container>
         );
     }
-
 }
 
-export default CharacterList;
+CharacterList.propTypes = {
+    getCharacters: PropTypes.func.isRequired,
+    character: PropTypes.object.isRequired
+}
+
+const mapStateToProps = state => ({
+    character: state.character
+});
+
+export default connect(mapStateToProps, { getCharacters, deleteCharacter, viewCharacter })(CharacterList);
