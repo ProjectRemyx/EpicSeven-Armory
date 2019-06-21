@@ -4,6 +4,7 @@ import CharacterList from './components/CharacterList';
 import CharacterModal from './components/CharacterModal';
 import HeaderIntro from './components/HeaderIntro';
 import MainTeam from './components/MainTeam';
+import FooterPage from './components/FooterBar';
 import { Container } from 'shards-react';
 
 import { Provider } from 'react-redux';
@@ -25,6 +26,7 @@ class App extends Component {
           <CharacterModal/>
           <CharacterList/>
         </Container>
+        <FooterPage/>
       </Provider>
       );
   }

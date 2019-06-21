@@ -4,15 +4,14 @@ import {
   CardHeader,
   CardTitle,
   CardImg,
-  CardBody,
-  CardFooter,
-  Button
+  CardBody
 } from "shards-react";
 
 export default function CharacterCard() {
   return (
     <div className="main-team-background">
         <h2>Main Team</h2>
+        <img src={require('../imgs/divider.png')} alt="Divider" style={{width: '30%'}}/>        
         <div className="main-team-container">
             <div className="main-team-card">
                 <Card style={{ maxWidth: "300px"}}>

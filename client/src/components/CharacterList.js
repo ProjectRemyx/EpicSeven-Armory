@@ -39,6 +39,7 @@ class CharacterList extends Component {
                                     className="float-right"
                                     theme="danger"
                                     size="sm"
+                                    style={{margin: '0'}}
                                     onClick={this.onDeleteClick.bind(this, _id)}
                                     >&times;
                                     </Button>
