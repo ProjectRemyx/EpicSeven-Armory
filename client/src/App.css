@@ -46,6 +46,27 @@ nav{
   margin: 1em;
 }
 
+.main-artifact-background{
+  background-image: url('./imgs/MysticalForest.jpg');
+  background-position: center; 
+}
+
+.main-artifact-background-overlay{
+  background-color: rgba(0,0,0,0.6);
+  padding: 2em;
+}
+
+.main-artifact-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-artifact-card{
+  margin: 1em;
+}
+
 .fade-enter{
   opacity: 0.01;
 }

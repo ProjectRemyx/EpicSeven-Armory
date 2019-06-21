@@ -4,6 +4,7 @@ import CharacterList from './components/CharacterList';
 import CharacterModal from './components/CharacterModal';
 import HeaderIntro from './components/HeaderIntro';
 import MainTeam from './components/MainTeam';
+import ArtifactCard from './components/MainArtifacts';
 import FooterPage from './components/FooterBar';
 import { Container } from 'shards-react';
 
@@ -21,6 +22,7 @@ class App extends Component {
         <AppNavBar/>
         <HeaderIntro/>
         <MainTeam/>
+        <ArtifactCard/>
       </div>
         <Container>
           <CharacterModal/>
