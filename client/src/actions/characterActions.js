@@ -22,6 +22,7 @@ export const addCharacter = character => dispatch => {
                 payload: res.data
             })
         )
+    
 };
 
 export const deleteCharacter = (id) => dispatch => {

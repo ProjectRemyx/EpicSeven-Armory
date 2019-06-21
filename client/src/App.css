@@ -1,3 +1,23 @@
+.App{
+  width: 100vw;
+}
+
+.header-background{
+  background-image: url('./imgs/headerbg.jpg');
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.header-container{
+  padding-top: 2em;
+}
+
+.header-text{
+  text-align: left;
+  color: white;
+  margin: auto;
+}
+
 .fade-enter{
   opacity: 0.01;
 }

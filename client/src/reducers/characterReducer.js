@@ -1,4 +1,3 @@
-import uuid from 'uuid';
 import { GET_CHARACTERS, ADD_CHARACTER, VIEW_CHARACTER, DELETE_CHARACTER, CHARACTERS_LOADING } from '../actions/types';
 
 const initialState = {

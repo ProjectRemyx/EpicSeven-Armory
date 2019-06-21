@@ -52,7 +52,7 @@ export default class NavExample extends React.Component {
 
   render() {
     return (
-      <Navbar type="dark" theme="primary" expand="md">
+      <Navbar type="dark" theme="dark" expand="md">
         <NavbarBrand href="#">E7 Armory</NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar} />
 
@@ -63,29 +63,21 @@ export default class NavExample extends React.Component {
                 Home
               </NavLink>
             </NavItem>
-            <Dropdown
-              open={this.state.dropdownOpen}
-              toggle={this.toggleDropdown}
-            >
-              <DropdownToggle nav caret>
+            <NavItem>
+              <NavLink active href="#">
                 Characters
-              </DropdownToggle>
-              <DropdownMenu>
-                <DropdownItem href="#">Character List</DropdownItem>
-                <DropdownItem href="#">Add New</DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
-          </Nav>
-
-          <Nav navbar className="ml-auto">
-            <InputGroup size="sm" seamless>
-              <InputGroupAddon type="prepend">
-                <InputGroupText>
-                  <FontAwesomeIcon icon={faSearch} />
-                </InputGroupText>
-              </InputGroupAddon>
-              <FormInput className="border-0" placeholder="Search..." />
-            </InputGroup>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink active href="#">
+                Artifacts
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink active href="#">
+                Contact
+              </NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

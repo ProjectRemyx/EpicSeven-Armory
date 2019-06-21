@@ -4,7 +4,6 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { getCharacters, deleteCharacter, viewCharacter } from '../actions/characterActions';
 import PropTypes from 'prop-types';
-import { basename } from 'path';
 
 class CharacterList extends Component {
 

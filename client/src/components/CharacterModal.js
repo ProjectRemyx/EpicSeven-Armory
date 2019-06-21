@@ -59,6 +59,7 @@ class CharacterModal extends Component{
             <div>
                 <Button
                     color="dark"
+                    theme="dark"
                     style={{marginBottom: '2rem', marginTop: '2rem'}}
                     onClick={this.toggle}
                 >
