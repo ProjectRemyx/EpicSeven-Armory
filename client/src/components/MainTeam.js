@@ -19,7 +19,7 @@ export default function CharacterCard() {
         <Bounce left cascade>       
             <div className="main-team-container">
                 <div className="main-team-card">
-                    <Card style={{ maxWidth: "300px"}}>
+                    <Card style={{ maxWidth: "350px"}}>
                         <CardHeader><img src={require('../imgs/6ice.png')} alt="6 Star Ice"/></CardHeader>
                         <CardImg src={require('../imgs/sigret.png')} alt="Sigret" style={{height: '350px'}}/>
                         <CardBody>
@@ -55,7 +55,7 @@ export default function CharacterCard() {
                 </div>
                 <div className="main-team-card">
                     <Card style={{ maxWidth: "350px" }}>
-                        <CardHeader><img src={require('../imgs/6dark.png')} alt="6 Star Dark"/></CardHeader>
+                        <CardHeader><img src={require('../imgs/6dark.png')} alt="6 Star Dark" style={{ width: '75px', height: '40px' }}/></CardHeader>
                         <CardImg src={require('../imgs/axe.png')} alt="Chaos Sect Axe" style={{height: '350px'}}/>
                         <CardBody>
                             <CardTitle>Chaos Sect Axe</CardTitle>

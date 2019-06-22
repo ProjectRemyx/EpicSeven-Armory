@@ -4,6 +4,10 @@ body{
   overflow-x: hidden;
 }
 
+footer{
+  width: 100vw;
+}
+
 h2{
   color: white;
 }
@@ -78,6 +82,7 @@ nav{
 }
 
 .character-list-background{
+  width: 100vw;
   background-color: #191614;
   padding-bottom: 3rem;
 }
