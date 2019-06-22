@@ -42,30 +42,30 @@ export default class NavExample extends React.Component {
 
   render() {
     return (
-      <Navbar type="dark" theme="dark" expand="md">
-        <NavbarBrand href=".">E7 Armory</NavbarBrand>
-        <NavbarToggler onClick={this.toggleNavbar} />
+        <Navbar type="dark" theme="dark" expand="md">
+          <NavbarBrand href=".">E7 Armory</NavbarBrand>
+          <NavbarToggler onClick={this.toggleNavbar} />
 
-        <Collapse open={this.state.collapseOpen} navbar>
-          <Nav navbar>
-            <NavItem>
-              <NavLink active href="#teamSection">
-                Team
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink active href="#artifactSection">
-                Artifacts
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink active href="#characterSection">
-                Characters
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
+          <Collapse open={this.state.collapseOpen} navbar>
+            <Nav navbar>
+              <NavItem>
+                <NavLink active href="#teamSection">
+                  Team
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink active href="#artifactSection">
+                  Artifacts
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink active href="#characterSection">
+                  Characters
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
     );
   }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "shards-react";
+import Fade from 'react-reveal/Fade';
 
 export default class HeaderIntro extends Component{
     render(){
@@ -9,8 +10,8 @@ export default class HeaderIntro extends Component{
                     <Row>
                         <Col className="header-text">
                         <div>
-                            <h1>Jing's Epic Seven Armory</h1>
-                            <img src={require('../imgs/maindivider.png')} alt="Divider" style={{width: '85%'}}/>
+                            <h1>Jing's Armory</h1>
+                            <img src={require('../imgs/maindivider.png')} alt="Divider"/>
                         </div>
                             <p>
                             <br/>
@@ -20,9 +21,11 @@ export default class HeaderIntro extends Component{
                             on this page.
                             </p>
                         </Col>
-                        <Col>
-                            <img src={require('../imgs/sez2.png')} alt="Epic Seven Character" style={{height: '400px'}}/>
-                        </Col>
+                        <Fade right>
+                            <Col>
+                                <img src={require('../imgs/sez2.png')} alt="Epic Seven Character" style={{height: '400px'}}/>
+                            </Col>
+                        </Fade>
                     </Row>
                 </Container>
             </div>
