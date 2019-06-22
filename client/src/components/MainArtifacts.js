@@ -18,8 +18,8 @@ export default function ArtifactCard() {
                             <CardImg top src={require('../imgs/scythe.png')} alt="Sigurd Scythe" />
                             <CardBody>
                             <p>
-                                Sigret uses Sigurd Scythe. When the caster's health is less than 50%,
-                                it increases attack by 25% and absorbs 25% of the damage dealt as health.
+                            Sigret uses Sigurd Scythe. When the caster's health is less than 50%, ATK is 
+                            increased by 25% and the same % of DMG dealt is gained as HP.
                             </p>
                             </CardBody>
                         </Card>
@@ -40,8 +40,8 @@ export default function ArtifactCard() {
                             <CardImg top src={require('../imgs/joker.png')} alt="Daydream Joker" />
                             <CardBody>
                             <p>
-                                Chaos Sect axe uses Daydream Joker. This artifact does extra damage equivalent
-                                to 1.5% of the enemy's max health when attacking.
+                                Chaos Sect axe uses Daydream Joker. This artifact does extra DMG equivalent
+                                to 1.5% of the enemy's max HP when attacking.
                             </p>
                             </CardBody>
                         </Card>
@@ -52,7 +52,7 @@ export default function ArtifactCard() {
                             <CardBody>
                             <p>
                                 Angelica uses the Rod of Amaryllis. This artifact heals an ally with the lowest
-                                health by 12% when using a non-attack skill. 
+                                HP by 12% when using a non-attack skill. 
                             </p>
                             </CardBody>
                         </Card>
